@@ -1,6 +1,21 @@
 # BiLSTMHubModel for Russian News Classification
 
-This repository contains a BiLSTM model fine-tuned for Russian news classification. The model is designed to classify Russian news articles into one of eleven categories using a bidirectional LSTM architecture on top of BERT embeddings.
+This repository contains a BiLSTM model fine-tuned for Russian news classification. 
+Model developed as part of a course [Рекуррентные сети в NLP и приложениях](https://stepik.org/course/188632/syllabus) on the Stepik platform.
+
+The model is designed to classify Russian news articles into one of eleven categories using a bidirectional LSTM architecture on top of BERT embeddings.
+
+```python
+categories = [
+    'climate', 'conflicts', 'culture', 'economy', 'gloss', 'health',
+    'politics', 'science', 'society', 'sports', 'travel'
+    ]
+```
+
+## Model Demo
+
+Вы можете попробовать работы модели прямо сейчас на [Hagging Face Spaces](ttps://huggingface.co/spaces/data-silence/lstm-news-classifier) 
+
 
 ## Model Description
 
