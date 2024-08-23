@@ -16,7 +16,7 @@ categories = [
 
 ## Model Demo
 
-You can sample the model's work right now at [Hagging Face Spaces](ttps://huggingface.co/spaces/data-silence/lstm-news-classifier) 
+You can sample the model's work right now at [Hagging Face Spaces](https://huggingface.co/spaces/data-silence/lstm-news-classifier) 
 
 
 ## Model Description
