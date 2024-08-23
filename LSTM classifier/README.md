@@ -1,4 +1,6 @@
 # BiLSTMHubModel for Russian News Classification
+![pic](https://raw.githubusercontent.com/data-silence/AIEdProjects/master/LSTM%20classifier/img/a_robotic_classifier_separates_newspapers_into_many_conveyor_streams__steampunk_style-c51d40fd-e31e-496c-8f2a-69db06af6ea6.webp)
+
 
 This repository contains a BiLSTM model fine-tuned for Russian news classification. 
 Model developed as part of a course [Рекуррентные сети в NLP и приложениях](https://stepik.org/course/188632/syllabus) on the Stepik platform.
@@ -14,7 +16,7 @@ categories = [
 
 ## Model Demo
 
-Вы можете попробовать работы модели прямо сейчас на [Hagging Face Spaces](ttps://huggingface.co/spaces/data-silence/lstm-news-classifier) 
+You can sample the model's work right now at [Hagging Face Spaces](ttps://huggingface.co/spaces/data-silence/lstm-news-classifier) 
 
 
 ## Model Description
