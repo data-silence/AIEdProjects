@@ -36,16 +36,13 @@ The model itself and checkpoints to it you can find on [HF](https://huggingface.
 
 The API provides three endpoints for making predictions:
 
-1. `/predict-from-csv/`: Accepts a CSV file containing news articles and returns predictions for each article.
-2. `/predict-demo/` (GET): Returns predictions for a set of demo news articles.
-3. `/predict-demo/` (POST): Accepts a list of news articles and returns predictions for each.
+1. `/predict-demo/` (POST): Accepts a list of news articles and returns predictions for each.
+2. `/predict-from-csv/`: Accepts a CSV file containing news articles and returns predictions for each article.
+
 
 ## Example usage with curl:
 
 ```bash
-# Predict demo articles
-curl -X GET http://localhost:8000/predict-demo/
-
 # Predict custom articles
 curl -X POST http://localhost:8000/predict-demo/ \
      -H "Content-Type: application/json" \
@@ -75,23 +72,8 @@ Once the application is running, you can access the automatic API documentation 
 
 ## Detailed API Usage Examples
 Here are more detailed examples of how to interact with the API endpoints using Python and the requests library.
-1. Predicting Categories for Demo Articles
 
-```python
-import requests
-
-# GET request to predict demo articles
-response = requests.get("http://localhost:8000/predict-demo/")
-if response.status_code == 200:
-    results = response.json()
-    for item in results["demo_results"]:
-        print(f"Text: {item['text']}")
-        print(f"Predicted Category: {item['prediction']}")
-        print("---")
-else:
-    print("Error:", response.status_code, response.text)
-```
-2. Predicting Categories for Custom Articles
+1. Predicting Categories for Custom Articles
 ```python
 import requests
 import json
@@ -120,7 +102,7 @@ else:
     print("Error:", response.status_code, response.text)
 ```
 
-3. Predicting Categories from a CSV File
+2. Predicting Categories from a CSV File
 
 First, create a CSV file named `news_articles.csv` with the following content:
 ```csv
